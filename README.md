@@ -8,4 +8,4 @@ Just clone this project and tape the following command ```vagrant up```
 You have to connect to the client ```vagrant ssh nfs-client``` you can check the following repertory mounted on nfs ```/nfs/home```.
 
 Start the plugin ```sudo docker-volume-netshare nfs```.
-Now you can run a new docker and mount the volume dirrectly to the nfs server ```docker run -i -t --volume-driver=nfs -v 192.168.100.100/var/nfs/home:/mount ubuntu /bin/bash```
+Now you can run a new docker and mount the volume dirrectly to the nfs server ```docker run -i -t --volume-driver=nfs -v 192.168.100.100/home:/mount ubuntu /bin/bash```
